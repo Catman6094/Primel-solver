@@ -28,7 +28,7 @@ def get_result(guess, answer):
 		if answer_remaining.count(c) >= guess_remaining[:i+1].count(c):
 			result[pos] = "?"
 		else: result[pos] = "_"
-	return list(accumulate(result))[-1]
+	return list(itools.accumulate(result))[-1]
 
 
 def possible_results(guess, cands):
